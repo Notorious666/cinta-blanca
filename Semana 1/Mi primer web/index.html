@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Este es el cerebro -->
+
+    <!-- Esto indica que se abre en google -->
+    <meta charset="utf-8">
+
+    <!-- Esto sirve para llamar la carpeta de css -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Esto indica que se usaran iconos de google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+    <!-- Nombre de la página -->
+    <title>Mi primer web</title>
+
+  </head>
+
+  <body>
+
+
+    <!-- Etiquetas basicas: titulos, párrafos, imágenes, links, etc... (Para hacer esto usas cmd+shift+7)
+          Hay otras que no cierran porque la etiqueta es el contenido en si -->
+
+    <header>
+      <!-- Este es un encabezado y de tipo inline (Todo seguido) -->
+
+      <h1>h1 representa un título</h1>
+
+      <h2>h2 representa un subtítulo</h2>
+
+      <h3>h3 representa un sub-subtítulo</h3>
+
+      <p>
+        Asi es como se ve un párrafo, y existe un texto predeterminado que se llama "Lorem Ipsum"
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+    </header>
+
+
+    <main>
+      <!-- Este es el cuerpo principal y de tipo block (Con espacio entre cada línea) -->
+
+      <!-- esta imagen esta desde internet -->
+      <!-- El texto de Alt es el que describe la imagen -->
+      <!-- Para insertar una clase se añade el atributo "class", se debe escribir con guion ya que separadas busca cada una como clase separada y esto se llama Snake case (imagen-grande), una id se añade igual y en lugar de Snake case se usa Cammel case (imagenGrande) -->
+      <img class="imagen-grande" src="https://wallpapercave.com/wp/4HDJRCz.jpg" alt="Imagen epica">
+
+      <!-- esta imagen esta desde la compu en la misma carpeta (Para carpetas anteriores se usa ../ antes del nombre) -->
+      <img class="imagen-pequeña" src="Imagen más epica.jpg" alt="Imagen más epica">
+
+      <!-- Este es un link (la a es de anchor) y es de las que no cierran (target="_blank" sirve para abrir una nueva pestaña, target en si es la forma en que se va a abrir el link) -->
+      <div>
+        <a href="https://www.google.com/" target="_blamk">Ir a google</a>
+      </div>
+
+    <!-- Box model: agrupación de elementos -->
+      <div class="caja">
+
+      </div>
+
+    <!-- Con emmet "span.palabra*4"+tab genera: -->
+    <!-- <span class="palabra"></span>
+    <span class="palabra"></span>
+    <span class="palabra"></span>
+    <span class="palabra"></span> -->
+    <!-- Siendo (span) la etiqueta, (.) el indicador de que es clase, (palabra) el nombre de la clase y (*4) el número de veces -->
+
+    <!-- ejemplo de box model con tarjeta -->
+      <div class="tarjeta">
+        <img class="foto" src="https://images.unsplash.com/photo-1475727946784-2890c8fdb9c8?ixlib=rb-1.2.1&w=1000&q=80" alt="Sunset">
+        <div class="texto">
+          <h2>Una puesta de sol</h2>
+          <h3>Muy bella</h3>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+
+      <!-- En esta seccion pondremos un icono -->
+
+      <div>
+        <img src="https://icon-library.net/images/phoenix-icon/phoenix-icon-1.jpg" alt="Icono fenix" class="icono">
+
+        <!-- Aqui se usa la etiqueta i de icono y se usan los que tenemos de google en el head(fuente externa) (Se les deberia añadir una clase extra para evitar conflictos como en el primero) -->
+        <!-- Asi es como se juntan un link (a) con un objeto (i) -->
+        <a href="https://www.google.com/" target="_blank">
+          <i class="material-icons google-icon">cloud</i>
+        </a>
+
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">favorite</i>
+
+
+      </div>
+
+    </footer>
+  </body>
+</html>

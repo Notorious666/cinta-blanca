@@ -1,0 +1,116 @@
+/* Para probar la conexión entre el CSS y el html cambiamos el background */
+/* CSS es la forma de hacer estilo en forma de cascada */
+/* Sintaxis básica: Selector(*), propiedad(background) y valor de propiedad(purple) */
+/* Ejemplo sintaxis basica */
+/* * {
+  background: purple;
+} */
+
+p {
+  color: white;
+  background-color: black;
+  font-style: oblique;
+}
+
+h1 {
+  color: blue;
+  font-size: 60px;
+}
+
+/* Usar color picker Shift+cmd+c */
+h2 {
+  color: rgb(38, 5, 34);
+  font-size: 40px;
+}
+
+h3 {
+  font-style: italic;
+}
+/* Clase: se repite mucho y se representa con punto (.), id: Se repite solo un par de veces y se representa con gato (#) */
+/* Ejemplos de clase e id: */
+/* .class {
+
+}
+
+#id {
+
+} */
+/* Para border va: border: tamaño estilo color; (No importa el orden de los elementos y por default genera una línea) */
+.imagen-grande {
+  width: 400px;
+  border: dotted 2px rgb(65, 87, 78);
+  margin-right: 70px;
+}
+
+.imagen-pequeña {
+  width: 300px;
+  border: 12px dashed rgb(23, 14, 89);
+}
+
+/* box model */
+.caja {
+  border: 2px solid black;
+  /* anchura */
+  width: 50px;
+  /* altura */
+  height: 50px;
+  /* distancia del objeto al borde */
+  padding: 100px;
+  /* distancia entre el objeto y otros */
+  margin: 50px;
+}
+
+/* para añadir diferentes distancias o anchos se puede colocar asi: */
+/* .caja {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+} */
+/* O asi */
+/* .caja {
+  padding: 10px 20px 10px 20px;
+} */
+/* Debe ser de acuerdo a las manecillas del reloj */
+/* O incluso */
+/* .caja {
+  padding: 10px 20px;
+} */
+/* Donde son primero en y y despues en x */
+
+/* Este es el estilo de la tarjeta */
+.tarjeta {
+  border: 2px solid;
+  border-radius: 10px;
+  height: 210px;
+  width: 550px;
+  margin: 20px;
+  box-shadow: 4px 5px rgb(79, 77, 78);
+}
+
+.foto {
+  height: 210px;
+  width: 250px
+}
+
+.texto {
+  display: inline-block;
+  width: 200px;
+}
+
+body {
+  background-image: url(https://i.ytimg.com/vi/Go_we2gPo44/maxresdefault.jpg);
+}
+
+.icono {
+  width: 100px;
+}
+
+.material-icons {
+  width: 50px;
+}
+
+.google-icon {
+  width: 50px;
+  color: purple;
+}

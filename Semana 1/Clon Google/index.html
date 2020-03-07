@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- Esta web sera un clon de la pagina principal del buscador Google
+ para aprender mas bases y estructura de una web con HTML y CSS -->
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Clon Google</title>
+</head>
+<body>
+
+
+  <header class="barra-superior">
+
+    <!-- nav>a*4 se usa para generar un nav (Barra) con 4 links(a*4) dentro(>)-->
+    <nav>
+      <a href="">Gmail</a>
+      <a href="">Imagenes</a>
+      <a href=""><img src="apps.svg" alt="aplicaciones" id="apps"></a>
+      <a href=""><img src="https://icon-library.net/images/phoenix-icon/phoenix-icon-1.jpg" alt="User" id="usuario"></a>
+    </nav>
+
+  </header>
+
+
+  <main>
+      <!-- Metemos cada cosa de la sección en las secciones para manipularlas por grupos -->
+      <section class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+      </section>
+
+      <section class="busqueda">
+          <!-- Hay muchos tipos de elemento de entrada, entre ellos: texto, number, email, password, color, range, checkbox...
+        placeholder funciona para tomar el lugar del texto mientras no se escriba nada -->
+          <input type="text" name="" value="" placeholder="">
+          <!-- <img class="microfono" src="microfono.jpg" alt="microfono de Google"> -->
+          <!-- Esto es un button bien hecho y derecho: -->
+          <!-- <input type="button" name="" value="Buscar con Google" placeholder=""> -->
+          <div>
+            <button>Buscar con Google</button>
+            <button>Me siento con suerte</button>
+          </div>
+      </section>
+
+  </main>
+
+
+  <footer>
+
+    <hr />
+
+    <nav class="mexico">
+      <a href="">México</a>
+    </nav>
+
+    <hr />
+
+    <nav class="barra-izquierda">
+      <a href="">Publicidad</a>
+      <a href="">Negocios</a>
+      <a href="">Acerca de</a>
+      <a href="">Cómo funciona la busqueda</a>
+    </nav>
+
+    <nav class="barra-derecha">
+      <a href="">Privacidad</a>
+      <a href="">Condiciones</a>
+      <a href="">Preferencias</a>
+    </nav>
+
+  </footer>
+
+
+</body>
+</html>

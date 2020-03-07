@@ -1,0 +1,173 @@
+/* Los colores se escriben por rgb (red, green, blue) o sistema hexadecimal(0123456789ABCDEF) */
+/* Verificamos que esten conectados: */
+/* * {
+  background: purple;
+} */
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* :hover indica que sucedera cuando pase el mouse por encima */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Aplicando estilo a la barra superior */
+
+/* Esto le pide buscar solo los elementos con la id (#) apps, por esto se le llama cascada*/
+.barra-superior #apps {
+  width: 20px;
+}
+
+.barra-superior #usuario {
+  width: 30px;
+  border-radius: 15px;
+}
+
+/* La nav se considera un elemento que flota en la página, por tanto se usa float para moverlo */
+.barra-superior nav {
+  float: right;
+}
+
+.barra-superior a {
+  margin: 20px 10px;
+  font-size: 13px;
+  color: black;
+}
+
+/* Cuando se hable del centro es horizontal y del medio es vertical */
+.barra-superior img {
+  vertical-align: middle;
+}
+
+.barra-superior {
+  height: 150px;
+  margin: 20px 15px;
+}
+
+/* Logo y barra de busqueda */
+
+/* Los elementos que se interpretan como textos deben tratarse como tal, por tanto se usa "text" */
+
+.microfono {
+  width: 15px;
+  height: 20px;
+}
+
+main {
+  text-align: center;
+}
+
+/* Auto en margin centra entre los dos objeto más cercanos de ambos lados */
+.logo {
+  max-width: 25%
+  margin: 20px auto;
+}
+
+.logo img {
+  max-width: 20%;
+}
+
+.busqueda input {
+  height: 40px;
+  width: 42%;
+  border-radius:21px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 0 15px;
+  border-color: rgb(154, 154, 154);
+  background-image: url("./microfono.jpg");
+  background-size: 15px 18px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+}
+
+.busqueda input:focus {
+  outline: none;
+  /* box shadow tiene variación en cuanto la distribucion, no es manecillas del reloj,
+  sino y, x y blur, sin blur se ve un color plano,
+  ademas actua como un plano cartesiano dondé positivo es derecha y negativo izquierda */
+  box-shadow: 1px 1px 3px grey;
+  box-shadow: -1px -1px 3px grey;
+}
+
+.busqueda input:hover {
+  outline: none;
+  box-shadow: 1px 1px 3px grey;
+  box-shadow: -1px -1px 3px grey;
+}
+
+.busqueda button {
+  outline: none;
+  margin: 10px 5px;
+  padding: 10px 5px;
+  color: grey;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  font-size: 14px;
+}
+
+.busqueda button:hover {
+  box-shadow: 1px 1px 5px;
+}
+
+.busqueda button:active {
+  box-shadow: 1px 1px 5px;
+  /* Esto sirve para mover un objeto en Y la distancia dentro del () */
+  /* transform: translateY(2px); */
+  border: 1px solid rgb(112, 211, 228);
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(220, 220, 220);
+}
+
+footer hr{
+  border: 0.5px solid rgb(181, 181, 181);
+  margin: 0px;
+}
+
+footer nav a{
+  color:grey;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.mexico {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.mexico a {
+ font-size: 15px;
+}
+
+.mexico a:hover {
+  text-decoration: none;
+}
+
+.barra-izquierda {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.barra-derecha {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
